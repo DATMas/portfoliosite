@@ -1,6 +1,11 @@
+/*@font-face {
+  font-family: Merriweather_Sans;
+  src: url(sansation_light.woff);
+}*/
+
 body {
 	background-color: #1F2833;
-	font-family: Merriweather Sans;
+	font-family: 'Merriweather Sans', serif;
 }
 
 /*body {background-color: #66FCF1;}*/
@@ -8,6 +13,9 @@ body {
 /*body {background-color: #0B0C10;}*/
 h1, h5 {
 	color: #66FCF1;
+}
+h3 {
+	
 }
 p {
 	color: #C5C6C7;
