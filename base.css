@@ -1,6 +1,6 @@
 /*@font-face {
   font-family: Merriweather_Sans;
-  src: url(sansation_light.woff);
+   url(sansation_light.woff);
 }*/
 
 body {
@@ -11,17 +11,45 @@ body {
 /*body {background-color: #66FCF1;}*/
 
 /*body {background-color: #0B0C10;}*/
-h1, h5 {
+h1, h2, h3, h4, h5 {
 	color: #66FCF1;
 }
-h3 {
-	
-}
+
 p {
 	color: #C5C6C7;
 }
 
-/*body {background-color: #45A29E;}*/
+/*Favourite music gallery carousel*/
+.song-name{
+	color: white;
+	text-shadow: 0 0 6px black, 0 0 8px grey;
+	/*padding-left: 230px;*/
+	padding-bottom: 30px;
+	/*text-align: left;*/
+}
+
+.band-name {
+	color: #e0e0eb;
+	text-shadow: 0 0 4px black, 0 0 7px #666699;
+	/*padding-left: 230px;*/
+	/*padding-bottom: 10px;*/
+	/*text-align: left;*/
+	/*font-weight: bold;*/
+}
+
+.songs {
+	/*height:290px;*/
+	/*width:500px*/
+	width: 100%;
+    margin: auto;
+}
+
+.carousel-caption {
+	padding-left: 230px;
+	text-align: left;
+}
+
+/*body {background-color: #45A29E;}
 
 /*navbar*/
 .navbar  {
@@ -49,7 +77,12 @@ width:40px;
 	color: #C5C6C7;
 }
 
+.link-secondary {
+	 text-decoration: none;
+}
+
 .link-secondary: hover {
 	color: #C5C6C7;
+
 }
 
