@@ -1,22 +1,37 @@
-/*@font-face {
-  font-family: Merriweather_Sans;
-   url(sansation_light.woff);
-}*/
-
 body {
 	background-color: #1F2833;
 	font-family: 'Merriweather Sans', serif;
 }
 
-/*body {background-color: #66FCF1;}*/
+/*body {background-color: #1F2833;} dark blue - page background  /*
+/*body {background-color: #45A29E;} blue - for scroll links  */
+/*body {background-color: #66FCF1;} light blue - headlines   */
 
-/*body {background-color: #0B0C10;}*/
+/*body {background-color: #0B0C10;} black -  nav bar     */
+/*body {background-color: #C5C6C7;} light-grey - paragrap text   */
+
+
+
 h1, h2, h3, h4, h5 {
 	color: #66FCF1;
 }
 
 p {
 	color: #C5C6C7;
+}
+
+.homeLinkHover :hover{
+		color: #66FCF1;
+}
+
+.scrolllink {
+	text-decoration: none;
+	color:  #45A29E;
+}
+
+.hoverChange :hover {
+	/*text-decoration: none;*/
+	color: #66FCF1;
 }
 
 /*Favourite music gallery carousel*/
@@ -41,7 +56,7 @@ p {
 	/*height:290px;*/
 	/*width:500px*/
 	width: 100%;
-    margin: auto;
+  margin: auto;
 }
 
 .carousel-caption {
@@ -55,6 +70,11 @@ p {
 .navbar  {
 	background-color: #0B0C10;
 }
+
+.navbar-nav{
+  padding-left: 15px;
+}
+
 .navbar .navbar-toggler {
 	background-color: #0B0C10!important;
 }
@@ -79,10 +99,30 @@ width:40px;
 
 .link-secondary {
 	 text-decoration: none;
+	 color:  #45A29E;
+
 }
 
 .link-secondary: hover {
-	color: #C5C6C7;
+	/*color: #C5C6C7;*/
+	color: #66FCF1;
 
 }
 
+.btn-success {
+	width: 120px;
+	/*background-color: #C5C6C7;*/
+	background-color: #1F2833;
+	border-color: #45A29E;
+	/*border: 2px;*/
+	/*background-color: #66FCF1;*/
+	color: white;
+	margin-top: 3.5px;
+}
+
+.button-hoverChange :hover {
+	background-color: #45A29E;
+	border-color: #45A29E;
+
+	/*background-color: #66FCF1;*/
+}
