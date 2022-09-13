@@ -24,7 +24,9 @@
     <!-- Links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
-        
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="projects.html">Projects</a>
         </li>
@@ -32,7 +34,7 @@
           <a class="nav-link" href="likes.html">My favourites</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">Contact me</a>
+          <a class="nav-link" href="about.html">Contacts</a>
         </li>
       </ul>
     </div>
@@ -44,141 +46,172 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
+    <!-- First column of the whole page's grid -->
+    <div class="col-lg-2"></div>
+    <!-- Second/Middle column of the whole page's grid (contains content) -->
+    <div class="col-lg-8">
       <h2>My favourites</h2>
       <p class="hoverChange">On this page I have placed some of my favourite <a href="#books" class="scrolllink">books</a>, <a href="#movies" class="scrolllink">movies</a>, <a href="#music" class="scrolllink">music</a> and <a href="#comics" class="scrolllink">comic books</a>. Might add more things in the future.</p>
 
       </br>
       <div id="music"><h2>Music</h2></div>
       <p>Three songs as of Autumn 2022</p>
-      <!-- <div class="container"> -->
-        <!-- <div class="row"> -->
-          <div class="col p-1"></div>
-          <div class="col p-1">
-            <!-- Carousel -->
-            <div id="demo" class="carousel slide" data-bs-ride="carousel" style="border-radius: 10px; border-color: #C5C6C7; border: 1px">
-              <!-- style="border-radius: 25px;" -->
-              <!-- Indicators/dots -->
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-              </div>
-          
-              <!-- The slideshow/carousel -->
-              <div class="carousel-inner" style="border-radius: 10px; border-color: #C5C6C7; border: 1px">
-                <!-- the beatles -->
-                <div class="carousel-item active">
-                  <img src="favourites\Songs\b6.jpg" alt="Beales" class="d-block songs">
-                  <!-- div class="carousel-caption">
-                    <h2 class="song-name">Octopus's Garden</h2>
-                      </br>
-                    <p class="band-name">by The Beatles</p>
-                  </div> -->
-                </div>
-                <!-- one republic -->
-                <div class="carousel-item">
-                  <img src="favourites\Songs\o6.jpg" alt="One republic" class="d-block songs">
-                  <!-- <div class="carousel-caption">
-                    <h2 class="song-name">Counting Stars</h2>
-                    </br>
-                    </br>
-                    <p class="band-name" >by One Republic</p>
-                  </div>  -->
-                </div>
-                <!-- half alive -->
-                <div class="carousel-item">
-                  <img src="favourites\Songs\h6.jpg" alt="half alive" class="d-block songs">
-                  <!-- <div class="carousel-caption">
-                    <h2 class="song-name">Still Feel</h2>
-                    </br>
-                    </br>
-                    <p class="band-name">by half alive</p>
-                  </div>  --> 
-                </div>
-              </div>
-          
-              <!-- Left and right controls/icons -->
-              <button class="carousel-control-prev" type="button" data-bs-target="#demo" style="color: black; text-shadow: 0 0 4px black, 0 0 7px #666699;" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" ></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-              </button>
+        <div class="col p-1"></div>
+        <div class="col p-1">
+          <!-- Carousel -->
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
             </div>
+        
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <!-- the beatles -->
+              <div class="carousel-item active">
+                <img src="favourites\Songs\b6.jpg" alt="Beales" class="d-block songs">
+              </div>
+              <!-- one republic -->
+              <div class="carousel-item">
+                <img src="favourites\Songs\o6.jpg" alt="One republic" class="d-block songs">
+              </div>
+              <!-- half alive -->
+              <div class="carousel-item">
+                <img src="favourites\Songs\h6.jpg" alt="half alive" class="d-block songs">
+              </div>
+            </div>
+        
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" ></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
           </div>
-          <div class="col p-1"></div>
-        <!-- </div> -->
-      <!-- </div> -->
+        </div>
+        <div class="col p-1"></div>
       </br>
       <p>I do have a few themed playlists but mostly I listen to the once generated for me by Spotify and YouTube music. Here is a Spotify pop mix.</p>
       </br>
       <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EQncLwOalG3K7?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
+<!-- 
       </br>
       </br>
       <div id="movies"><h2>Movies</h2></div>
       <p>Three movies as of Autumn 2022</p>
       <p>Will be here in a bit...</p>
-
+ -->
+      </br>
       </br>
       </br>
       <div id="comics"><h2>Comics</h2></div>
-      <p>Three comics as of Autumn 2022</p>
+      <!-- <p>Three comics as of Autumn 2022</p> -->
       <p>In progress...</p>
       <div class="row">
-        <div class="col-sm-4">
-          <img src="superman.jpg" data-toggle="modal"
-            data-target="#exampleModal" class="img-rounded img-fluid" alt="Cinque Terre" >
+        <div class="col-md-4 comics-col" >
+          <img src="favourites\Comics\superman.jpg" data-toggle="modal"
+            data-target="#exampleModal" class="img-rounded img-fluid comics-image" alt="superman">
             <!-- width="170" height="236" -->
           <div class="modal fade" id="exampleModal" tabindex="-1"
             role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true" >
             <div class="modal-dialog " role="document" w-70 style="width: 170px">
-                  <img src="favourites\comics\superman.jpg" style="width: 170px"/>
+                <img src="favourites\Comics\superman.jpg"/>
             </div>
           </div>
           </div>
-          <div class="col-sm-4">
-            <img src="superman.jpg" data-toggle="modal"
-            data-target="#exampleModal" class="img-rounded img-fluid" alt="Cinque Terre" >
-            <div class="modal fade" id="exampleModal" tabindex="-1"
+          <div class="col-md-4 comics-col">
+            <img src="favourites\Comics\s1.jfif" data-toggle="modal"
+            data-target="#exampleModal" class="img-rounded img-fluid comics-image" alt="spiderman">
+            <div class="modal fade" id="exampleModal" tabindex="0"
             role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true" >
-              <div class="modal-dialog " role="document" w-70 style="width: 170px">
-                  <img src="favourites\comics\spiderman.jpg" style="width: 170px"/>
-
+              <div class="modal-dialog " role="document" w-70>
+                <img src="favourites\Comics\s1.jfif"/>
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
-              <img src="superman.jpg" data-toggle="modal"
-              data-target="#exampleModal" class="img-rounded img-fluid" alt="Cinque Terre" >
-              <div class="modal fade" id="exampleModal" tabindex="-1"
+          <div class="col-md-4 comics-col">
+              <img src="favourites\Comics\batman.jpg" data-toggle="modal"
+              data-target="#exampleModal" class="img-rounded img-fluid comics-image" alt="batman">
+              <div class="modal fade" id="exampleModal" tabindex="1"
               role="dialog" aria-labelledby="exampleModalLabel"
               aria-hidden="true" >
-              <div class="modal-dialog " role="document" w-70 style="width: 170px">
-                <img src="favourites\comics\batman.jpg" style="width: 170px"/>
-
-              </div>
+                <div class="modal-dialog " role="document" w-70>
+                  <img src="favourites\Comics\batman.jpg" />
+                </div>
             </div>
           </div>
 
-          </div>
         </div>
 
       </br>
       </br>
       <div id="books"><h2>Books</h2></div>
-      <p>Three books as of Autumn 2022</p>
-      <p>Coming soon...</p>
+      <!-- <p>Three books as of Autumn 2022</p> -->
+      <p>I do enjoy reading non-fiction literature, be it tech, history, economics or sociology. However, all of my favourite books are fiction.</p>
 
-    </div>
-    <div class="col-md-2"></div>
+      <div class="row">
+        <!-- Foundation -->
+        <div class="col-md-4 book-col">
+          <div class="book-con">
+            <img src="favourites\Books\foundation.jpg" class="book-image"  alt="foundation">
+            <!-- Text Overlay -->
+            <div class="book-overlay">
+              <span>Asimov's Foundation is a remarkable story about people trying to preserve all the best that the human civilisation has to offer from getting lost after the inevitable fall of the galactic empire. </span>
+            </div>
+          </div>
+        </div>
+        <!-- HPMOR -->
+        <div class="col-md-4 book-col">
+          <div class="book-con">
+            <img src="favourites\Books\hpmor1.jpg" class="book-image" alt="hpmor">
+            <!-- Text Overlay -->
+            <div class="book-overlay">
+              <span>Harry Potter and the Methods of Rationality is my favourite novel and possibly the best fan-fiction that has ever been written. The main character is armed with scientific method and is on the way to either saving or destroying the world.</span>
+            </div>
+        </div>
+        </div>
+        <!-- Martin Eden -->
+        <div class="col-md-4 book-col">
+          <div class="book-con">
+            <img src="favourites\Books\martin.jpg" class="book-image" alt="martin">
+            <!-- Text Overlay -->
+            <div class="book-overlay">
+              <span>Jack London has a great talent for writing stories with truly alive characters. Martin Eden is a passionate and kind person who dedicates himself to education to rise above his surroundings and achieve success. The whole world will be against him...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Third Column of the whole page's grid -->
+    <div class="col-lg-2"></div>
   </div>
 </div>
 
+</br>
+<!-- </br> -->
+<!-- <script src=
+"https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity=
+"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous">
+</script>
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity=
+"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous">
+</script>
+<script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity=
+"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous">
+</script>
+ -->
 <!-- <blockquote>Violence is the last refuge of the incompetent.</blockquote>
 ― Isaac Asimov, Foundation -->
 
