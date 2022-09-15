@@ -18,7 +18,7 @@
   <div class="container-fluid">
     <!-- Logo -->
     <a class="navbar-brand" href="index.html">
-      <img src="logo.png" alt="Avatar Logo" style="width:80px;" class="rounded-pill" > 
+      <img src="images/logo.png" alt="Avatar Logo" style="width:80px;" class="rounded-pill" > 
     </a>
     <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -45,37 +45,62 @@
 
 </nav>
 </br>
+</br>
 <div class="container">
   <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-
+    <div class="col-lg-2"></div>
+    <div class="col-lg-4">
       <h2>I'm Dier <span style="color:#45A29E">Abdullakhnov</span></h2>
       <p>Welcome to my blogging/portfolio website! Here I am planning to publish my career achievements and things such as some of my interests like books and music.</p>
       <div class="button-cv-hoverChange">
-        <a role="button" class="btn btn-info" href = "Dier Abdullakhanov - CV.pdf" download="Dier Abdullakhanov - CV.pdf"class="link-secondary">Download CV</a>
+        <a role="button" class="btn btn-info" href = "Other elements/Dier Abdullakhanov - CV.pdf" download="Dier Abdullakhanov - CV.pdf" class="link-secondary">Download CV</a>
       </div>
-      <!-- <p>Welcome to my blogging/portfolio website! On this website you can find didn't want this website to just list the things that I have worked on so it will also include some personal things like some of my favourite music and comic books.</p>
- -->  </br>
-      
+      <!-- <p>Welcome to my blogging/portfolio website! On this website you can find didn't want this website to just list the things that I have worked on so it will also include some personal things like some of my favourite music and comic books.</p>-->  
+      </br>
       <!-- <p>I will update this website from time to time adding new features and more recent information about my achievements. One of the upcoming changes I hope to implement soon is a form that allows users to contact me by email directly from this website. </p> -->
-
-      
-      
-
-      <h5>Below are my contact details:</h1>
-      <div class ="homeLinkHover">
-        <a href="https://www.linkedin.com/in/dier-abdullakhanov/" class="link-secondary">LinkedIn</a></br>
-        <a href="https://t.me/share/url?url=https://t.me/DierA42&text=Hello there!" class="link-secondary">Telegram</a></br>
-        <a href = "mailto: dier.abdullakhanov@gmail.com" class="link-secondary">Email</a>
+    </div>
+    <div class="col-lg-4">
+      <div class="container-fluid" style="margin-top: 20px;">
+        <div class="home-images">
+          <img src="images/box.jpg" alt="box" class="box-image2">
+          <img src="images/second box.jpg" alt="box" class="box-image">
+          <div class="photoes" style="">
+            <img class="photoSlides" src="images/photo5.png" style="width:100%; animation:fading 1s; ">
+            <img class="photoSlides" src="images/photo6.png" style="width:100%; animation:fading 1s;">
+          </div>
+          <!-- <img src="images/photo6.png" alt="box" class="photo-image"> -->
+        </div> 
       </div>
+    </div>
+    <div class="col-lg-2"></div>
+  </div>
+  </br>
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+      <h5>Below are my contact details:</h1>
+        <div class ="homeLinkHover">
+          <a href="https://www.linkedin.com/in/dier-abdullakhanov/" class="link-secondary">LinkedIn</a></br>
+          <a href="https://t.me/share/url?url=https://t.me/DierA42&text=Hello there!" class="link-secondary">Telegram</a></br>
+          <a href = "mailto: dier.abdullakhanov@gmail.com" class="link-secondary">Email</a>
+        </div>
+    </div>
+    <div class="col-lg-2"></div>
+  </div>
+
       </br>
       </br>
+
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
       <h5>Disclaimer</h1>
       <p> A lot of this website's pages are still in progress. I am constantly updating this website by adding new features and more recent information about my achievements. One of the upcoming changes I hope to implement soon is a form that allows users to contact me by email directly from this website. </p>
-      
     </div>
     <div class="col-md-2"></div>
+  </div>
+</div>
+    
   </div>
 </div>
 </br>
@@ -88,6 +113,22 @@
 
   <!-- Load our React component. -->
   <script src="like_button.js"></script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("photoSlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
 
 <!--  <blockquote>To succeed, planning alone is insufficient. One must improvise as well.</blockquote>
 ― Isaac Asimov, Foundation -->
