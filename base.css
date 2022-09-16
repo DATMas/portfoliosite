@@ -10,6 +10,10 @@ body {
 /*body {background-color: #0B0C10;} black -  nav bar     */
 /*body {background-color: #C5C6C7;} light-grey - paragrap text   */
 
+.page-container {
+	margin-top: 30px;
+}
+
 
 h1, h2, h3, h4, h5 {
 	color: #66FCF1;
@@ -96,18 +100,6 @@ width:40px;
 	/*background-color: #66FCF1;*/
 }
 
-.btn-success {
-	width: 120px;
-	/*background-color: #C5C6C7;*/
-	background-color: #1F2833;
-	border-color: #45A29E;
-	/*border: 2px;*/
-	/*background-color: #66FCF1;*/
-	color: white;
-	margin-top: 3.5px;
-}
-
-
 .home-images {
 	position: relative;
 	width: 90%;
@@ -149,7 +141,7 @@ width:40px;
 
 .photoes {
 	position: relative;
-	width: 65% ;
+	width: 70% ;
 	/*left: 40%;*/
 	right: 40px;
 	height: auto;
@@ -187,16 +179,9 @@ width:40px;
 	/*margin-right: 20%;*/
 }
 
-.home-images:hover .photoes{
-	/*transition-duration: 0.1s;*/
+/*.home-images:hover .photoes{
+	transition-duration: 0.1s;
 	bottom: 40px;
 	right: 100%;  
-}
+}*/
 
-
-.button-hoverChange :hover {
-	background-color: #45A29E;
-	border-color: #45A29E;
-
-	/*background-color: #66FCF1;*/
-}

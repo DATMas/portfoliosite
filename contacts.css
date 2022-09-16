@@ -1,0 +1,46 @@
+/*.page-container {
+	margin-top: 20px;
+}*/
+
+.contactsContent {
+	margin-top: 10px;
+}
+
+.btn-success {
+	width: 144px;
+	background-color: #1F2833;
+	border-color: #45A29E;
+	color: white;
+	margin-top: 5px;
+	margin-right: 4px;
+}
+
+.button-hoverChange :hover {
+	background-color: #45A29E;
+	border-color: #45A29E;
+}
+
+br {
+	display: inline;
+}
+
+@media screen and (min-width: 323px) {
+  br {
+  	display: inline
+  }
+}
+@media screen and (min-width: 481px) {
+  br {
+  	display: none
+  }
+}
+@media screen and (min-width: 768px) {
+  br {
+  	display: inline
+  }
+}
+@media screen and (min-width: 900px) {
+  br {
+  	display: none
+  }
+}
