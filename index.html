@@ -65,10 +65,10 @@
     </div>
     <div class="col-lg-4">
       <div class="container-fluid" style="margin-top: 20px;">
-        <div class="home-images">
-          <img src="images/box.jpg" alt="box" class="box-blue">
-          <img src="images/second box.jpg" alt="box" class="box-grey">
-          <div class="photoes" style="">
+        <div class="home-images load-img">
+          <img src="images/box.jpg" alt="box" class="box-blue " id="box-blue" loading="lazy" >
+          <img src="images/second box.jpg" alt="box" class="box-grey " id="box-grey" loading="lazy"  >
+          <div class="photoes " id="photoes" >
             <img class="photoSlides" src="images/photo5.png" style="width:100%; animation:fading 1s; bottom:-1px">
             <img class="photoSlides" src="images/photo7.png" style="width:100%; animation:fading 1s;bottom:8px">
           </div>
@@ -130,8 +130,27 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 5000); // Change image every 2 seconds
+  setTimeout(carousel, 5000); // Change image every 5 seconds
 }
+
+// $(window).on("load", function (e) {
+  // document.getElementsByClassName("box-blue").style.display = "block"; 
+  // document.getElementsByClassName("box-grey").style.display = "block"; 
+  // document.getElementsByClassName("photoes").style.display = "block"; 
+// });
+// jQuery(window).load(function() {
+//      document.getElementsByClassName("box-blue").style.display = "block"; 
+//   document.getElementsByClassName("box-grey").style.display = "block"; 
+//   document.getElementsByClassName("photoes").style.display = "block"; 
+// });
+
+// jQuery(document).ready(function() {
+//      document.getElementsByClassName("box-blue").style.display = "block"; 
+//   document.getElementsByClassName("box-grey").style.display = "block"; 
+//   document.getElementsByClassName("photoes").style.display = "block"; 
+//  });
+
+
 </script>
 
 <!--  <blockquote>To succeed, planning alone is insufficient. One must improvise as well.</blockquote>
