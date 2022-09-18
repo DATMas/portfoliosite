@@ -24,7 +24,7 @@ p {
 }
 
 .homeLinkHover :hover{
-		color: #66FCF1;
+	color: #66FCF1;
 }
 
 .scrolllink {
@@ -39,8 +39,6 @@ p {
 
 
 
-/*body {background-color: #45A29E;}
-
 /*navbar*/
 .navbar  {
 	background-color: #0B0C10;
@@ -48,18 +46,20 @@ p {
 
 .navbar-nav{
   padding-left: 15px;
-  /*text-align: right;*/
 }
 
 .navbar .navbar-toggler {
 	background-color: #0B0C10!important;
 }
+
 .navbar .navbar-toggler: hover {
   color: #1F2833!important;
 }  
+
 .navbar .navbar-toggler:focus {
   color: #1F2833;
 }   
+
 .navbar-toggler-icon {
 background-image: url(images/toggle.png);
 width:40px;
@@ -97,9 +97,9 @@ width:40px;
 .button-cv-hoverChange :hover {
 	background-color: #45A29E;
 	border-color: #45A29E;
-
-	/*background-color: #66FCF1;*/
 }
+
+/* Photo and box images styles and effects */
 
 .home-images {
 	position: relative;
@@ -112,21 +112,15 @@ width:40px;
 	transform: translateX(-30%);
 	transition: bottom 1s ease, left 1s ease;
 }
-/*.home-images .photoes{
-	bottom: 0px;
-	left: 20%;
-	transform: translateX(-30%);
-	transition: bottom 1s ease, left 1s ease;
-}*/
 
-.box-image {
+.box-grey {
 	position: absolute;
   border-radius: 10px; 
 	width: 50% ;
 	height: auto;
 }
 
-.box-image2 {
+.box-blue {
 	position: absolute;
   margin-bottom: 15%;
   margin-left: 10%;
@@ -143,10 +137,8 @@ width:40px;
 .photoes {
 	position: relative;
 	width: 70% ;
-	/*left: 40%;*/
 	right: 40px;
 	height: auto;
-	/*opacity: 0.9;*/
 	box-shadow: 0 0    ;
 	transition: 1s ease;
 }
@@ -154,10 +146,8 @@ width:40px;
 .photoSlides {
 	position: relative;
 	width: 65% ;
-	/*left: 40%;*/
 	right: 40px;
 	height: auto;
-	/*opacity: 0.9;*/
 	box-shadow: 0 0    ;
 	transition: 1s ease;
 }
@@ -168,21 +158,10 @@ width:40px;
 	100%{opacity:1}
 } 
 
-
-.home-images:hover .box-image{
-	/*transition-duration: 0.1s;*/
+.home-images:hover .box-grey{
 	left: 20px;
-	/*margin-right: 20%;*/
 }
-.home-images:hover .box-image2{
-	/*transition-duration: 0.1s;*/
+.home-images:hover .box-blue{
 	left: 30%;
-	/*margin-right: 20%;*/
 }
-
-/*.home-images:hover .photoes{
-	transition-duration: 0.1s;
-	bottom: 40px;
-	right: 100%;  
-}*/
 
