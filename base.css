@@ -73,6 +73,34 @@ width:40px;
 	color: #C5C6C7;
 }
 
+
+.content-block-shade {
+
+}
+
+.content-block-shade :hover { 
+	transition: .5s ease;
+	/*box-shadow: 10px 10px 8px;*/
+	box-shadow: 4px 10px 15px #000000;
+/*	border:10px;
+	border-color: black;*/
+	/*box-shadow: 0 0 8px #45A29E, 0 0 30px #45A29E;*/
+}
+
+.content-block {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+
+/*for paragraph without shadow box animation*/
+.static-paragraph {
+	pointer-events: none; 
+	box-shadow:none;
+}
+
 .link-secondary {
 	 text-decoration: none;
 	 color:  #45A29E;
@@ -82,6 +110,7 @@ width:40px;
 .link-secondary: hover {
 	/*color: #C5C6C7;*/
 	color: #66FCF1;
+	pointer-events: none;
 
 }
 
@@ -92,25 +121,41 @@ width:40px;
 	color: white;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	box-shadow:none;
 }
 
-.button-cv-hoverChange :hover {
+.btn-info:hover{
 	background-color: #45A29E;
 	border-color: #45A29E;
+	pointer-events: none;
+	box-shadow:none
 }
+
+/*.button-cv-hoverChange:hover {
+
+	background-color: #45A29E;
+	border-color: #45A29E;
+	pointer-events: none;
+	box-shadow:none
+}*/
+
+/*.button-cv-hoverChange :hover {
+
+	background-color: #45A29E;
+	border-color: #45A29E;
+	pointer-events: none;
+}*/
 
 /* Photo and box images styles and effects */
 
 @keyframes slideInLeft {
-
-        
-        0% {
-          transform: translateY(-80%);
-        }
-        90% {
-          transform: translateY(0);
-        }
-      }
+  0% {
+    transform: translateY(-80%);
+  }
+  90% {
+    transform: translateY(0);
+  }
+ }
 
 .load-img {
 	animation: 1s ease-out 0s 1 slideInLeft;

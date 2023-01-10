@@ -4,20 +4,25 @@
 
 .contactsContent {
 	margin-top: 10px;
+	
 }
 
-.btn-info {
+
+
+/*.btn-info {
 	width: 144px;
 	background-color: #1F2833;
 	border-color: #45A29E;
 	color: white;
 	margin-top: 5px;
 	margin-right: 4px;
-}
+	box-shadow:none
+}*/
 
 .button-hoverChange :hover {
 	background-color: #45A29E;
 	border-color: #45A29E;
+	pointer-events: none;
 }
 
 br {
@@ -44,3 +49,7 @@ br {
   	display: none
   }
 }
+
+pointer-events {
+	none;
+} 
