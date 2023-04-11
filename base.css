@@ -1,5 +1,8 @@
 body {
 	background-color: #1F2833;
+/*	background: linear-gradient(circle, #1F2833 50%, #151c23 60%);*/
+background: radial-gradient(circle, rgba(31,40,51,1) 35%, rgba(21,28,35,1) 80%);
+/*	background-repeat: #1F2833;*/
 	font-family: 'Merriweather Sans', serif;
 }
 
