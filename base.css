@@ -185,7 +185,7 @@ width:40px;
 
 .box-blue {
 	position: absolute;
-  margin-bottom: 15%;
+  margin-bottom: 12.9%;
   margin-left: 10%;
   border-radius: 10px; 
 	width: 60% ;
@@ -204,15 +204,26 @@ width:40px;
 	height: auto;
 	box-shadow: 0 0    ;
 	transition: 1s ease;
+/*	bottom: -0.2vh;*/
 }
 
 .photoSlides {
 	position: relative;
-	width: 65% ;
-	right: 40px;
+	width:100%;
+  margin-left: 18%;
 	height: auto;
-	box-shadow: 0 0    ;
-	transition: 1s ease;
+	animation:fading 1s; 
+/*	box-shadow: 0 0    ;
+	transition: 1s ease;*/
+}
+#photoSlide1 {
+	bottom: -0.2vh;
+}
+
+#photoSlide2 {
+	right: 20px;
+  bottom: -0.2vh;
+
 }
 
 @keyframes fading{
