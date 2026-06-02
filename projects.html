@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My favourites</title>
+<title>Projects</title>
 <link rel="icon" type="image/x-icon" href="Images/fav-logo.ico">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,69 +12,176 @@
   href="https://fonts.googleapis.com/css?family=Merriweather Sans">
 </head>
 <body>
-<nav class="navbar navbar-expand-sm ">
+    <nav class="navbar navbar-expand-sm ">
 
-  <div class="container-fluid">
-    <!-- Logo -->
-    <a class="navbar-brand" href="index.html">
-      <img src="Images/logo.png" alt="Avatar Logo" style="width:80px;" class="rounded-pill"> 
-    </a>
-    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- Links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projects.html">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="likes.html">My favourites</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contacts.html">Contacts</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-      </ul>
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/logo.png" alt="Avatar Logo" style="width:80px;" class="rounded-pill">
+            </a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="likes.html">My favourites</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container page-container">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8 content-block-shade">
+                <div class="content-block">
+
+                    <h2 style="pointer-events: none;">My Projects</h2>
+                    </br>
+                    <p style="pointer-events: none;">Things I've built in my spare time — usually to solve a problem I had with tools that already existed.</p>
+                </div>
+                </br>
+
+                <!-- ── 24 Game Checker ── -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title-group">
+                            <span class="project-icon">♠</span>
+                            <h3 class="project-title">24 Game Checker</h3>
+                        </div>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">Game</span>
+                    </div>
+
+                    <!-- Visual preview -->
+                    <div class="project-preview">
+                        <div class="preview-24">
+                            <div class="suits">♠ ♥ ♦ ♣</div>
+                            <div class="card-row">
+                                <div class="playing-card">3</div>
+                                <div class="playing-card">8</div>
+                                <div class="playing-card">A</div>
+                                <div class="playing-card">6</div>
+                            </div>
+                            <div class="check-btn">Check →</div>
+                        </div>
+                    </div>
+
+                    <p class="project-desc">
+                        The 24 Game is a card puzzle where you use any combination of +&nbsp;−&nbsp;×&nbsp;÷ on four cards to reach 24.
+                        We played it regularly with friends, but every checker we found online had the same flaw: <span class="highlight">it showed the solution immediately</span>,
+                        which kills the fun. We'd end up covering part of the screen just to find out whether a combination was even possible before trying to solve it ourselves.
+                    </p>
+                    <p class="project-desc">
+                        So I built one that tells you only whether 24 is achievable — and reveals the solution separately, only when you ask for it.
+                        I also added support for <span class="highlight">Ace as both 1 and 11</span>, which most checkers ignore entirely, even though it's a standard rule of the game.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li>Checks feasibility without spoiling the solution</li>
+                        <li>Reveal solution on demand</li>
+                        <li>Ace counts as 1 or 11</li>
+                        <li>Whole-number intermediate steps toggle</li>
+                    </ul>
+
+                    <a href="https://datmas.github.io/24-game-checker/" target="_blank" class="project-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                            <path d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                        </svg>
+                        Try it live
+                    </a>
+                </div>
+
+                <!-- ── Buzzer App ── -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title-group">
+                            <span class="project-icon">⚡</span>
+                            <h3 class="project-title">Buzzer</h3>
+                        </div>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">Supabase</span>
+                        <span class="tag">Real-time</span>
+                        <span class="tag">Multiplayer</span>
+                    </div>
+
+                    <!-- Visual preview -->
+                    <div class="project-preview">
+                        <div class="preview-buzzer">
+                            <div class="buzz-title">⚡ Buzzer</div>
+                            <div class="buzz-subtitle">Real-time buzzer for quizzes, classrooms and pub nights</div>
+                            <div class="buzz-btns">
+                                <div class="buzz-btn buzz-btn-host">🎮 Host</div>
+                                <div class="buzz-btn buzz-btn-join">🙋 Join</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="project-desc">
+                        A friend of mine loves hosting quiz nights — usually through Kahoot, but sometimes with freeform rounds where the host asks any question and players race to answer first.
+                        For those rounds you need a buzzer, and while plenty of free options exist online, <span class="highlight">most look like they were built in 2005 and require a downloaded app</span>.
+                    </p>
+                    <p class="project-desc">
+                        I built Buzzer as a proper, mobile-friendly web app that feels like a real quiz show. The host creates a room in seconds; players join via a shared link, QR code, or room code — no accounts, no installs.
+                        Building it pushed me into new territory: I used <span class="highlight">Supabase</span> for real-time communication between players and deepened my understanding of how networked apps coordinate state across clients.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li>Host and join via link, QR code, or room code</li>
+                        <li>Real-time buzzer with instant feedback</li>
+                        <li>No app or account required</li>
+                        <li>Built with Supabase real-time</li>
+                    </ul>
+
+                    <a href="https://datmas.github.io/buzzer-app" target="_blank" class="project-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                            <path d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                        </svg>
+                        Try it live
+                    </a>
+                </div>
+
+                <!-- ── Coming soon ── -->
+                <div class="coming-soon-block">
+                    <p><span class="pulse-dot"></span>More projects on the way — check back soon.</p>
+                </div>
+
+                </br>
+
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
     </div>
-  </div>
 
-</nav>
 
-<div class="container page-container">
-  <div class="row">
-    <div class="col-lg-2"></div>
-    <div class="col-lg-8 content-block-shade">
-      <div class="content-block">
-
-        <h2 style="pointer-events: none;">My Projects</h2>
-        </br>
-        <p style="pointer-events: none;">Here I plan to describe some of the projects I worked on at university and the office while undertaking the position of Requirements Specifications Engineer and Junior Systems Analyst, as well as things I have done in my spare time.</p>
-
-        <p style="pointer-events: none;">For now please visit my LinkedIn page for more information</p>
-
-      </div>
-
-      <!-- <div class="row">
-          <div class="col p-3"></div>
-          <div class="col p-3">
-
-          </div>
-          <div class="col p-3 ">
-          </div>
-      </br> -->
-    </div>
-    <div class="col-lg-2"></div>
-  </div>
-    
-
-<!-- <blockquote>I wanted to be a psychological engineer, but we lacked the facilities, so I did the next best thing - I went into politics. It's practically the same thing.</blockquote>
-― Isaac Asimov, Foundation -->
+    <!-- <blockquote>I wanted to be a psychological engineer, but we lacked the facilities, so I did the next best thing - I went into politics. It's practically the same thing.</blockquote>
+    ― Isaac Asimov, Foundation -->
 
 
 </body>

@@ -1,0 +1,5 @@
+# Visual Studio
+.vs/
+
+# Config with credentials
+config.js
